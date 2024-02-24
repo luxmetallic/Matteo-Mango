@@ -172,7 +172,8 @@
     var companyName = "CEO";
     var address = "The Rake Dubai City Walk Boulevardn #4A-03, Dubai, UAE "; // Replace this with the actual address
     var websiteUrl1 = "https://www.therake.com/";
-    var websiteUrl2 = "https://www.therake.com/";
+    var websiteUrl2 = "https://www.newmare.com/";
+    var birthday = "19740802"; // Format: YYYYMMDD
 
 
     var vCard = `BEGIN:VCARD
@@ -187,6 +188,7 @@ EMAIL;TYPE=WORK:${newmarelemail}
 ADR;TYPE=WORK:;;${address}
 URL:${websiteUrl1}
 URL:${websiteUrl2}
+BDAY:${birthday}
 END:VCARD`;
 
     var dataUrl = "data:text/vcard;charset=utf-8," + encodeURIComponent(vCard);
