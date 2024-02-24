@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
     body {
-      background-color: #f2f2f2; /* Dark background color */
+      background-color: #3C4043; backgoundcolor */
       font-family: Arial, sans-serif;
       color: #fff; /* Text color */
       margin: 0; /* Remove default margin */
@@ -15,7 +15,7 @@
 
     .container {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 20px;
       padding: 20px;
       background-color: #f2f2f2;
       background-size: cover;
@@ -27,39 +27,13 @@
 
     h1 {
       font-size: 20px;
-      font-family: "HelveticaNeueCyr", sans-serif;
+      font-family: "Calluna", sans-serif;
       font-weight: 300; /* 700 is typically used for bold font weight */
       color: #fff;
-      text-align: right;
+      text-align: center;
       margin: 10px auto;
     }
 
-    h2 {
-      font-size: 15px;
-      font-family: "HelveticaNeueCyr", sans-serif;
-      color: #fff;
-      text-align: right;
-      margin: 15px auto;
-    }
-
-.pic-container {
-  background-color: #000;
-  max-width: 465px;
-  max-height: 206px;
-  background-image: url('Dr b.jpeg'); /* Corrected the URL */
-  display: flex;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  flex-direction: row; /* Display items in a row */
-  align-items: center;
-  margin: 20px auto;
-}
-
-    /* Style the profile picture */
-    .pic img {
-      max-width: 100%;
-      height: auto;
-      margin-right: 55px; /* Add some spacing between the picture and text */
-    }
 
     /* Removed .pic a CSS rules */
 
@@ -69,8 +43,19 @@
     }
 
     /* Create a container for social icons */
-    .social-icons-container {
-      background-color: #000;
+    .social-icons-container3 {
+      background-color: #0C1823;
+      max-width: 465px;
+      height: 60px; /* Reduce the height */
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      align-items: center;
+      margin: 5px auto; /* Center the container horizontally */
+    }
+    /* Create a container for social icons */
+    .social-icons-container2 {
+      background-color: #0C1823;
       max-width: 465px;
       height: 60px; /* Reduce the height */
       display: flex;
@@ -80,100 +65,128 @@
       margin: 5px auto; /* Center the container horizontally */
     }
 
-    .social-icons-container a {
-      margin-right: 20px; /* Adjust spacing between icons */
+    /* Create a container for social icons */
+    .social-icons-container1 {
+      background-color: #0C1823;
+      max-width: 465px;
+      height: 60px; /* Reduce the height */
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      align-items: center;
+      margin: 5px auto; /* Center the container horizontally */
     }
+
+
+
+
 
     /* Move the button to the left side */
     .save-contact {
-      text-align: right; /* Center the button text */
-      margin-right: 165px;
-      margin-top: 20px; /* Adjust the top margin */
+      background-color: #0C1823;
+      max-width: 465px;
+      height: 20px; /* Reduce the height */
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      align-items: center;
+      margin: 10x auto; /* Center the container horizontally */
     }
 
-    .save-contact a {
-      text-decoration: none; /* Remove underlines from the link */
-    }
+.pic-container {
+  background-color: #fff;
+  max-width: 392px;
+  max-height: 462px;
+  display: flex;
+  flex-direction: column; /* Make the children stack vertically */
+  justify-content: center; /* Center the children vertically */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  align-items: center;
+  margin: 20px auto;
+}
 
-    .save-contact img {
-      vertical-align: middle;
-      margin-right: 10px;
-    }
+.pic-image {
+  width: 392px;
+  height: 492px;
+}
 
-    .save-contact:hover img {
-      transform: scale(1.2);
-      color: #0077b5;
-    }
 
-    /* Media query for mobile screens */
-    @media (max-width: 480px) {
-      .container {
-        padding: 10px; /* Reduce padding for smaller screens */
-      }
-
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 50px; /* Reduce padding for smaller screens */
+  }
      h1 {
       font-size: 16px;
       text-align: center;
-      margin-left: 0.5px; /* Add some spacing between the picture and text */
+      margin-down: 0.5px; /* Add some spacing between the picture and text */
     }
 
-    h2 {
-      font-size: 15px;
-      text-align: center;
-      margin-left: 1px; /* Add some spacing between the picture and text */
-    }
-      
-    .pic img {
-      max-width: 80%;
-      height: auto;
-      margin-right: 0.1px; /* Add some spacing between the picture and text */
-      text-align: left;
-    }
+  .icon {
+    font-size: 20px; /* Adjust the font size for the first icon */
+    color: #0077b5;
+    margin-bottom: 10px;
+    text-align: center; /* Center the first icon */
+  }
 
-    .icon {
-      font-size: 30px;
-      color: #0077b5;
-      margin-bottom: 5px;
-    }
+  .social-icons-container3 {
+    max-width: 100%; /* Adjust max-width for mobile screens */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    margin: 2px; /* Adjust spacing between icons for mobile screens */
+    margin-bottom: 20px;
+  }
+  .social-icons-container2 {
+    max-width: 100%; /* Adjust max-width for mobile screens */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    margin: 2px; /* Adjust spacing between icons for mobile screens */
+    margin-bottom: 20px;
+  }
+  .social-icons-container1 {
+    max-width: 100%; /* Adjust max-width for mobile screens */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    margin: 2px; /* Adjust spacing between icons for mobile screens */
+    margin-bottom: 20px;
+  }
 
-      .social-icons-container {
-        max-width: 100%; /* Adjust max-width for mobile screens */
-        flex-wrap: wrap; /* Allow icons to wrap to the next line */
-      }
+  .save-contact {
+    margin-top: 10px;
+    padding: 20px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center the button text */
+  }
+}
 
-      .social-icons-container a {
-        margin: 2px; /* Adjust spacing between icons for mobile screens */
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
 
-      .save-contact {
-        text-align: right; /* Center the button text */
-        margin: 20px auto; /* Center the button horizontally */
-      }
-    }
+
   </style>
 
 <script>
   function saveContact() {
     // Get the contact information
-    var name = "ARMANDO GGOMEZ";
-    var phoneNumber1 = "+971502783808";
-    var whatsappNumber = "+971502783808";
-    var email = "ceo@imz-holding.com";
-    var companyName = "IMZ HOLDING ";
-    var address = "City Walk building 20 , Office 3 and 4 Groundfloor"; // Replace this with the actual address
-    var mapUrl = "https://maps.app.goo.gl/2zpmadRThpxYYZBf7" + encodeURIComponent(address);
+    var name = "Matteo Mango";
+    var phoneNumber1 = "+971543146892";
+    var phoneNumber2 = "+393311523639";
+    var personalemail = "Matteomango@mac.com";
+    var therakeemail = "Matteomango@therakemagazine.com";
+    var newmarelemail = "M.mango@newmare.com";
+    var companyName = "CEO";
+    var address = "The Rake Dubai City Walk Boulevardn #4A-03, Dubai, UAE "; // Replace this with the actual address
+    var websiteUrl1 = "https://www.therake.com/";
+    var websiteUrl2 = "https://www.therake.com/";
+
 
     var vCard = `BEGIN:VCARD
 VERSION:3.0
 N:${name};;;;
 ORG:${companyName}
 TEL;TYPE=CELL:${phoneNumber1}
-TEL;TYPE=WHATSAPP:${whatsappNumber}
-EMAIL:${email}
+TEL;TYPE=CELL:${phoneNumber2}
+EMAIL:${personalemail}
+EMAIL;TYPE=WORK:${therakeemail}
+EMAIL;TYPE=WORK:${newmarelemail}
 ADR;TYPE=WORK:;;${address}
-URL:${mapUrl}
+URL:${websiteUrl1}
+URL:${websiteUrl2}
 END:VCARD`;
 
     var dataUrl = "data:text/vcard;charset=utf-8," + encodeURIComponent(vCard);
@@ -184,24 +197,13 @@ END:VCARD`;
 
 </head>
 <body>
-<div class="container">
-  <div class="pic-container">
-    <div class="pic"><img src="dp.png" alt="Profile Picture"></div>
-    <div>
-      <h1>ARMANDO GGOMEZ</h1>
-      <h2>CEO & FOUNDER IMZ HOLDING </h2>
-    </div>
-  </div>
-
-  <div class="social-icons-container">
-    <a href="https://wa.link/9xy03j"><img src="whatsapp.png" alt="WhatsApp"></a>
-    <a href="mailto:ceo@imz-holding.com"><img src="mail.png" alt="Email"></a>
-    <a href="https://maps.app.goo.gl/2zpmadRThpxYYZBf7"><img src="loc.png" alt="location"></a>
-  </div>
+<div class="pic-container">
+  <img src="logo1.png" alt="Description of the image" class="pic-image">
+</div>
 
   <div class="save-contact">
     <a href="#" onclick="saveContact()">
-      <img src="D.png" alt="Save Contact">
+      <img src="d.png" alt="Save Contact">
     </a>
   </div>
 </div>
